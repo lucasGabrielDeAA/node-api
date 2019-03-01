@@ -14,17 +14,7 @@ mongoose.connect(
 //Importing application's models
 requireDir('./src/models/');
 
-const Product = mongoose.model('Product');
-
-//First route
-app.get('/', (req, res) => {
-    Product.create({
-        title: 'Test',
-        description: 'Product test',
-        url: 'www.google.com',
-    });
-
-    return res.send('Hello developer');
-});
+//Routes
+app.use('/api', require('./src/routes'));
 
 app.listen(3001);
