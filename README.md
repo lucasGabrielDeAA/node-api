@@ -1,3 +1,5 @@
+NodeJS's API created for knowledge porpouses
+
 # node-api
 
 ## Installing [NodeJS](https://nodejs.org/en/)
