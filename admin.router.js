@@ -8,9 +8,10 @@ AdminBro.registerAdapter(AdminBroMongoose);
 
 
 const Product = require('./src/models/Product');
+const User = require('./src/models/User');
 
 const adminBro = new AdminBro({
-    resources: [Product],
+    resources: [Product, User],
 })
 
 dotenv.config({
