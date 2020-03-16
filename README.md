@@ -64,3 +64,18 @@ docker run --name <MONGO_DB_NAME> -p 27017:27017 -d mongo
  localhost:3001/api/products
  ```
 
+ ## Admin console
+
+ Create a **.env** file on project's root with the following content.
+
+ ```
+ADMIN_EMAIL="someemail@domain.com"
+ADMIN_PASSWORD="some-long-and-string-passowrd-with-alphanumerical-and-special-caracters"
+ ```
+
+ After all, you can access the admin console under the following url.
+
+ ```
+ localhost:3001/admin
+ ```
+
