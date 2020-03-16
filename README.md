@@ -28,7 +28,7 @@ npm init -y
 
 # Docker & MongoDb
 
-Follow the installation steps according your platform, at the [Docker](https://docs.docker.com/install/) documentation. After docker's installations, you need to run a mondogb's rom in the docker's environment. And enable the docker port to listen to real port commands. Running the following command.
+Follow the installation steps according your platform, at the [Docker](https://docs.docker.com/install/) documentation. After docker's installation, you need to run a mondogb's rom in the docker's environment. And enable the docker port to listen to real port commands. Running the following command.
 
 ```
 docker run --name <MONGO_DB_NAME> -p 27017:27017 -d mongo
