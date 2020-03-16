@@ -15,6 +15,7 @@
     "admin-bro-expressjs": "^2.0.0",
     "admin-bro-mongoose": "^0.4.2",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.16.4",
     "express-formidable": "^1.2.0",
     "express-session": "^1.17.0",
