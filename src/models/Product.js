@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+const {Schema, model} = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
-const Product = new mongoose.Schema({
+const Product = Schema({
     title: {
         type: String,
         required: true,
@@ -18,9 +18,14 @@ const Product = new mongoose.Schema({
         type: Date,
         default: Date.now,
     },
+    addedBy: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+        required: true,
+    }
 });
 
 //Adding paginate plugin
 Product.plugin(mongoosePaginate);
 
-module.exports = mongoose.model('Product', Product);
+module.exports = model('Product', Product);
